@@ -1,0 +1,93 @@
+body{
+  padding:0;
+  margin:0;
+}
+.container{
+  text-align: center;
+    padding: 30px;
+    background: #1dd8d8;
+    overflow: hidden;
+}
+.container .input-container{
+  padding: 0 20px ;
+}
+#task{
+  margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 70%;
+    padding: 10px;
+    
+    font-size: 16px;
+}
+#add{
+  padding: 10px;
+    width: 20%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    border:none;
+    outline: none;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+li{
+  border-bottom: 5px solid #fff;
+  cursor: pointer;
+    position: relative;
+    padding: 5px 8px 5px 5.5em;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+.remove{
+  cursor: pointer;
+  padding: 10px;
+    border: navajowhite;
+    outline: none;
+    background: #f00;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+}
+.myItemContainer{
+  float: right;
+  padding-right: 5em;
+}
+.myItemContainer > input {
+  margin: 10px 20px;
+}
+.itemValue{
+  float: left;
+}
+.down,.up{
+  cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #a59a9a;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+li:first-child .up{
+  display: none;
+}
+li:last-child .down{
+  display: none;
+}

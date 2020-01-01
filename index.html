@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">    
+    <h2>My To Do List</h2>
+    <div class="input-container">
+        <form id="form">
+            <input id="task"><button id="add">Add</button>
+        </form>    
+        
+    </div>
+</div>
+<div id="todos"></div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script> 
+<script src="script.js"></script>
+
+<script type="text/javascript">
+	$( function(){
+		
+		$(".down").click( function(){
+        $($(this).parents("li")[0]).insertAfter($($(this).parents("li")[0]).next());
+      } );
+
+      $(".up").click( function(){
+        $($(this).parents("li")[0]).insertBefore($($(this).parents("li")[0]).prev());
+      } );
+
+
+      
+	} );
+</script>
+</body>
+</html>
+ 
